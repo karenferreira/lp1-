@@ -9,15 +9,6 @@ class Processamento {
         imc = peso / (altura * altura);
         return imc;
     }
-
-    public String verificaExistencia(double altura) {
-        if(altura>0){
-            return "ok";
-        } else{
-            return "nao existe divisao por zero";
-        }
-    }
-
     public double Getclassifica(double imc) {
         if (imc < 16.00) {
             System.out.println("Baixo peso grau II");
